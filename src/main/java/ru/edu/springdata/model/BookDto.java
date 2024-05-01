@@ -3,12 +3,12 @@ package ru.edu.springdata.model;
 import lombok.Builder;
 import lombok.Getter;
 
-@Builder
 @Getter
-public class Book {
+@Builder
+public class BookDto {
 
     private Long id;
     private String name;
     private String language;
-    private String category; // history, it, health etc...
+    private String category;
 }

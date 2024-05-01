@@ -1,0 +1,33 @@
+###getAll()
+GET http://localhost:8080/api/books?language=китайский
+Accept: application/json
+
+###get()
+GET http://localhost:8080/api/book/1
+
+
+###save()
+POST http://localhost:8080/api/book
+Content-Type: application/json
+
+{
+  "name": "книга9876",
+  "language": "русский",
+  "category": "автобиография"
+}
+
+###update()
+PUT http://localhost:8080/api/book
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "dfdfdgdg",
+  "language": "русский",
+  "category": "автобиография"
+}
+
+###delete()
+DELETE http://localhost:8080/api/book?id=1
+Content-Type: application/json
+
