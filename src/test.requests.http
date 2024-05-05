@@ -1,0 +1,38 @@
+###getAll()
+GET http://localhost:8080/api/books?language=русский&category=проза
+Accept: application/json
+
+###get()
+GET http://localhost:8080/api/book/1
+Accept: application/json
+
+
+###save()
+POST http://localhost:8080/api/book
+Content-Type: application/json
+
+{
+  "title": "книга9876",
+  "language": "русский",
+  "category": "проза",
+  "author": "Иванов Иван",
+  "active": true
+}
+
+###update()
+PUT http://localhost:8080/api/book
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "книга9876",
+  "language": "русский",
+  "category": "автобиография",
+  "author": "Иванов Иван",
+  "active": false
+}
+
+###delete()
+DELETE http://localhost:8080/api/book?id=5
+Content-Type: application/json
+

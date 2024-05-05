@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-data
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: spring-data_db_admin
+    password: spring-data_db_admin
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
