@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    image: postgres
+    container_name: spring-data-db
+    environment:
+      POSTGRES_USER: spring-data_db_admin
+      POSTGRES_PASSWORD: spring-data_db_admin
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
